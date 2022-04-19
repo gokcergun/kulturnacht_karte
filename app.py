@@ -11,14 +11,14 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 # set app layout
 st.set_page_config(layout = 'wide')
 c = st.columns((5))
-
+title_html = '''<h3 align= 'center', style="font-size:20px"><b>8. Tübinger Kulturnacht, 7. Mai 2022</b></h3>''' 
+st.header(title_html)
 
 #create map
 m = folium.Map(location=[48.520462436253766, 9.053572912482348], zoom_start=16)
 tooltip = "Klicken Sie hier für Informationen"
 iframe_start = folium.IFrame("""<b>18:00 Marktplatz</b><br> Startschuss  der 8. Tübinger Kulturnacht""")
 popup_start = folium.Popup(iframe_start, min_width=300, max_width=300, min_height=75, max_height=75)
-title_html = '''<h3 align= 'center', style="font-size:20px"><b>8. Tübinger Kulturnacht, 7. Mai 2022</b></h3>''' 
 
 
 for i in range(len(data)):
@@ -47,6 +47,4 @@ for i in range(len(data)):
 folium.TileLayer('stamentoner').add_to(m)
 m.get_root().html.add_child(folium.Element(title_html))
 
-with c:
-    st.header(title_html)
-    folium_static(m)
+folium_static(m)
