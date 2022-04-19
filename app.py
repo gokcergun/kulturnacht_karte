@@ -9,7 +9,7 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 
 # set app layout
 st.set_page_config(layout = 'wide')
-c = st.beta_columns((1))
+c = st.columns((1))
 c.title('Column 1')
 
 #create map
