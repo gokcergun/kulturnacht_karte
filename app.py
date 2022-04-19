@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_folium import folium_static
 import folium
 import pandas as pd
+from folium.plugins import BeautifyIcon
 
 
 # read data
