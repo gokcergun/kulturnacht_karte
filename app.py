@@ -7,7 +7,7 @@ from folium.plugins import BeautifyIcon
 # set app layout
 st.set_page_config(layout = 'wide')
 title= '8. Tübinger Kulturnacht, 7. Mai 2022'
-st.title(title)
+st.header(title)
 
 # read data
 data = pd.read_csv('Data/orts.csv',encoding='cp1252')
