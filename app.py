@@ -45,6 +45,6 @@ for i in range(len(data)):
         popup = popup_reg, tooltip=tooltip).add_to(m)
         
 folium.TileLayer('stamentoner').add_to(m)
-m.get_root().html.add_child(folium.Element(title_html))
+#m.get_root().html.add_child(folium.Element(title_html))
 
 folium_static(m)
