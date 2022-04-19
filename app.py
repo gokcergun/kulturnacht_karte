@@ -10,7 +10,7 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 
 # set app layout
 st.set_page_config(layout = 'wide')
-col1, col2 = st.columns((1,4))
+col1, col2 = st.columns([1,4])
 title= '8. Tübinger Kulturnacht, 7. Mai 2022'
 
 
