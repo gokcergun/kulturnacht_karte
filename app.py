@@ -11,7 +11,7 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 # set app layout
 st.set_page_config(layout = 'wide')
 title= '8. Tübinger Kulturnacht, 7. Mai 2022'
-
+st.title=title
 
 #create map
 m = folium.Map(location=[48.520462436253766, 9.053572912482348], zoom_start=16)
