@@ -47,5 +47,4 @@ folium.TileLayer('stamentoner').add_to(m)
 m.get_root().html.add_child(folium.Element(title_html))
 
 
-with c:
-    folium_static(m)
+folium_static(m)
