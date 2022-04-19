@@ -10,7 +10,8 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 
 # set app layout
 st.set_page_config(layout = 'wide')
-c = st.columns((1))
+c = st.columns((5))
+
 
 #create map
 m = folium.Map(location=[48.520462436253766, 9.053572912482348], zoom_start=16)
@@ -46,5 +47,6 @@ for i in range(len(data)):
 folium.TileLayer('stamentoner').add_to(m)
 m.get_root().html.add_child(folium.Element(title_html))
 
-
-folium_static(m)
+with c:
+    st.header(title_html)
+    folium_static(m)
