@@ -46,5 +46,4 @@ for i in range(len(data)):
 folium.TileLayer('stamentoner').add_to(m)
 #m.get_root().html.add_child(folium.Element(title_html))
 
-fig.update_layout(title_text=title, margin={"r": 0, "t": 0, "l": 0, "b": 0}, height=800)
-folium_static(m)
+folium_static(m,use_container_width=True)
