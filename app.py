@@ -10,7 +10,6 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 
 # set app layout
 st.set_page_config(layout = 'wide')
-col1, col2 = st.columns([1,20])
 title= '8. Tübinger Kulturnacht, 7. Mai 2022'
 
 
@@ -47,6 +46,5 @@ for i in range(len(data)):
 folium.TileLayer('stamentoner').add_to(m)
 #m.get_root().html.add_child(folium.Element(title_html))
 
-with col2:
-    st.header(title)
-    folium_static(m)
+fig.update_layout(title_text=title, margin={"r": 0, "t": 0, "l": 0, "b": 0}, height=800)
+folium_static(m)
