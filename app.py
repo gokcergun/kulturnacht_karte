@@ -39,7 +39,7 @@ for i in range(len(data)):
         # star marker
         icon_star = BeautifyIcon(icon='star',
                              inner_icon_style='color:#fcff42;font-size:25px;', 
-                             background_color='transparent',border_color='black')
+                             background_color='black',border_color='transparent')
         marker = folium.Marker(
         location=location, icon=icon_star,
         popup = popup_reg, tooltip=tooltip).add_to(m)
