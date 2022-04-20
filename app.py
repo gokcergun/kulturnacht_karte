@@ -5,14 +5,6 @@ import pandas as pd
 from folium.plugins import BeautifyIcon
 
 # set app layout
-padding=0
-hide_streamlit_style = """
-<style>
-.css-hi6a2p {padding-top: 0rem;}
-</style>
-"""
-st.markdown(hide_streamlit_style)
-
 
 st.set_page_config(layout = 'wide')
 title= '8. Tübinger Kulturnacht, 7. Mai 2022'
@@ -57,3 +49,11 @@ folium.TileLayer('stamentoner').add_to(m)
 #m.get_root().html.add_child(folium.Element(title_html))
 
 folium_static(m,  width=1300, height=600)
+
+padding=0
+hide_streamlit_style = """
+<style>
+.css-hi6a2p {padding-top: 0rem;}
+</style>
+"""
+st.markdown(hide_streamlit_style)
