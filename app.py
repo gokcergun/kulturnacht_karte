@@ -15,7 +15,7 @@ footer {visibility: hidden;}
 hide_streamlit_style = """
 <style>
 .css-18e3th9 {
-                    padding-top: 0rem;
+                    padding-top: 3rem;
                     padding-bottom: 0rem;
                     padding-left: 5rem;
                     padding-right: 0rem;
