@@ -5,6 +5,16 @@ import pandas as pd
 from folium.plugins import BeautifyIcon
 
 # set app layout
+padding = 0
+st.markdown(f""" <style>
+    .reportview-container .main .block-container{{
+        padding-top: {padding}rem;
+        padding-right: {padding}rem;
+        padding-left: {padding}rem;
+        padding-bottom: {padding}rem;
+    }} </style> """, unsafe_allow_html=True)
+
+
 st.set_page_config(layout = 'wide')
 title= '8. Tübinger Kulturnacht, 7. Mai 2022'
 st.header(title)
