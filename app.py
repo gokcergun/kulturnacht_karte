@@ -53,7 +53,7 @@ folium_static(m,  width=1300, height=600)
 padding=0
 hide_streamlit_style = """
 <style>
-.css-hi6a2p {padding-top: {padding}rem;}
+.reportview-container .main .block-container {padding-top: {padding}rem;}
 </style>
 """
 st.markdown(hide_streamlit_style, )
