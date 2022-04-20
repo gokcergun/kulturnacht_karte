@@ -64,7 +64,7 @@ for i in range(len(data)):
 folium.TileLayer('stamentoner').add_to(m)
 #m.get_root().html.add_child(folium.Element(title_html))
 
-folium_static(m,  width=1300, height=600)
+folium_static(m,  width=1400, height=550)
 
 
 
