@@ -16,7 +16,7 @@ hide_streamlit_style = """
                 }
 </style>
 """
-st.markdown(hide_streamlit_style, )
+st.markdown(hide_streamlit_style,  unsafe_allow_html=True)
 title= '8. Tübinger Kulturnacht, 7. Mai 2022'
 st.header(title)
 
