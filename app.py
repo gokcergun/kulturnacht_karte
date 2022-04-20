@@ -38,8 +38,8 @@ for i in range(len(data)):
         popup_reg = folium.Popup(iframe_reg, min_width=300, max_width=300, min_height=75, max_height=75)
         # star marker
         icon_star = BeautifyIcon(icon='star',
-                             inner_icon_style='color:#fcff42;font-size:25px;', 
-                             background_color='black',border_color='transparent')
+                             inner_icon_style='color:#FFED4A;font-size:25px;', 
+                             background_color='transparent',border_color='transparent')
         marker = folium.Marker(
         location=location, icon=icon_star,
         popup = popup_reg, tooltip=tooltip).add_to(m)
