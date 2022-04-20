@@ -6,13 +6,19 @@ from folium.plugins import BeautifyIcon
 
 # set app layout
 st.set_page_config(layout = 'wide')
+
+st.markdown(""" <style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style> """, unsafe_allow_html=True)
+
 hide_streamlit_style = """
 <style>
 .css-18e3th9 {
                     padding-top: 0rem;
-                    padding-bottom: 10rem;
+                    padding-bottom: 0rem;
                     padding-left: 5rem;
-                    padding-right: 5rem;
+                    padding-right: 0rem;
                 }
 </style>
 """
