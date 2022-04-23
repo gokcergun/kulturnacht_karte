@@ -36,7 +36,7 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 m = folium.Map(location=[48.520462436253766, 9.053572912482348], zoom_start=15)
 tooltip = "Klicken Sie hier für Informationen"
 iframe_start = folium.IFrame("""<b>18:00 Marktplatz</b><br> Startschuss  der 8. Tübinger Kulturnacht
-<b>{}</b><a href=https://www.kulturnacht-tuebingen.de/partys/location/location_id/8349 target="_blank">siehe Veranstaltungen</a>""".format(data[data['Ort'] == 'Marktplatz Tübingen']['Link']))
+<br><a href=https://www.kulturnacht-tuebingen.de/partys/location/location_id/8349 target="_blank">siehe Veranstaltungen</a>""")
 popup_start = folium.Popup(iframe_start, min_width=300, max_width=300, min_height=75, max_height=75)
 
 
