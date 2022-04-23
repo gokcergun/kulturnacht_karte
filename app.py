@@ -33,7 +33,7 @@ data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 
 
 #create map
-m = folium.Map(location=[48.520462436253766, 9.053572912482348], zoom_start=16)
+m = folium.Map(location=[48.520462436253766, 9.053572912482348], zoom_start=15)
 tooltip = "Klicken Sie hier für Informationen"
 iframe_start = folium.IFrame("""<b>18:00 Marktplatz</b><br> Startschuss  der 8. Tübinger Kulturnacht""")
 popup_start = folium.Popup(iframe_start, min_width=300, max_width=300, min_height=75, max_height=75)
