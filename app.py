@@ -37,7 +37,7 @@ m = folium.Map(location=[48.51962033618168, 9.053572913135799], zoom_start=15)
 tooltip = "Klicken Sie hier für Informationen"
 iframe_start = folium.IFrame("""<b>18:00 Marktplatz</b><br> Startschuss  der Tübinger Kulturnacht
 <br><a href=https://www.kulturnacht-tuebingen.de/partys/location/location_id/8349 target="_blank">siehe Veranstaltungen</a>""")
-popup_start = folium.Popup(iframe_start, min_width=300, max_width=300, max_height=40)
+popup_start = folium.Popup(iframe_start, min_width=300, max_width=300)
 
 
 for i in range(len(data)):
@@ -54,7 +54,7 @@ for i in range(len(data)):
     # set other locations
     else:
         iframe_reg = folium.IFrame("""<b>{}</b><br> <a href={} target="_blank">siehe Veranstaltungen</a>""".format(data['Ort'][i], data['Link'][i]))
-        popup_reg = folium.Popup(iframe_reg, min_width=300, max_width=300, max_height=75)
+        popup_reg = folium.Popup(iframe_reg, min_width=300, max_width=300)
         # star marker
         icon_star = BeautifyIcon(icon='map-pin',
                              inner_icon_style='color:#1bbbe9;font-size:25px;', 
