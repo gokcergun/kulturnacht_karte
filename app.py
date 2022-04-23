@@ -54,7 +54,7 @@ for i in range(len(data)):
     # set other locations
     else:
         iframe_reg = folium.IFrame("""<b>{}</b><br> <a href={} target="_blank">siehe Veranstaltungen</a>""".format(data['Ort'][i], data['Link'][i]))
-        popup_reg = folium.Popup(iframe_reg, min_width=200, max_width=200)
+        popup_reg = folium.Popup(iframe_reg, min_width=200, max_width=200, min_height=100, max_height=100)
         # star marker
         icon_star = BeautifyIcon(icon='map-pin',
                              inner_icon_style='color:#1bbbe9;font-size:25px;', 
