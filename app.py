@@ -31,7 +31,7 @@ st.write("[kulturnacht-tuebingen.de](https://www.kulturnacht-tuebingen.de/)")
 data = pd.read_csv('Data/orts.csv',encoding='cp1252')
 
 #create map
-m = folium.Map(location=[48.51862378656686, 9.05509538690078], zoom_start=15)
+m = folium.Map(location=[48.51982477582212, 9.05509538690078], zoom_start=15)
 tooltip = "Klicken Sie hier für Informationen"
 iframe_start = folium.IFrame("""<b>18:00 Marktplatz</b><br> Startschuss  der Tübinger Kulturnacht
 <br><a href=https://www.kulturnacht-tuebingen.de/partys/location/location_id/8349 target="_blank">siehe Veranstaltungen</a>""")
