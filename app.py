@@ -44,8 +44,8 @@ for i in range(len(data)):
     location = [data['Latitude'][i], data['Longitude'][i]]
     # set starting location
     if data['Ort'][i] == 'Marktplatz Tübingen':
-        icon_start = BeautifyIcon(icon='circle',
-                             inner_icon_style='color:#ff7442;font-size:23px;', 
+        icon_start = BeautifyIcon(icon='map-pin',
+                             inner_icon_style='color:#ff7442;font-size:25px;', 
                              background_color='transparent',border_color='transparent')
         marker = folium.Marker(
         location=location,
