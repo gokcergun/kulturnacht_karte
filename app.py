@@ -45,7 +45,7 @@ for i in range(len(data)):
     # set starting location
     if data['Ort'][i] == 'Marktplatz Tübingen':
         icon_start = BeautifyIcon(icon='circle',
-                             inner_icon_style='color:#ff7442;font-size:25px;', 
+                             inner_icon_style='color:#ff7442;font-size:23px;', 
                              background_color='transparent',border_color='transparent')
         marker = folium.Marker(
         location=location,
@@ -56,7 +56,7 @@ for i in range(len(data)):
         iframe_reg = folium.IFrame("""<b>{}</b><br> <a href={} target="_blank">siehe Veranstaltungen</a>""".format(data['Ort'][i], data['Link'][i]))
         popup_reg = folium.Popup(iframe_reg, min_width=300, max_width=300, min_height=75, max_height=75)
         # star marker
-        icon_star = BeautifyIcon(icon='star',
+        icon_star = BeautifyIcon(icon='map-pin',
                              inner_icon_style='color:#17b4e4;font-size:25px;', 
                              background_color='transparent',border_color='transparent')
         marker = folium.Marker(
